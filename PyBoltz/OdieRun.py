@@ -31,7 +31,7 @@ class OdieRun:
     Gases = [
         np.nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE',
         'PROPANE', 'ISOBUTANE', 'CO2', np.nan, 'H2O', 'OXYGEN', 'NITROGEN', np.nan, np.nan, np.nan,
-        np.nan, 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME'
+        np.nan, 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME','DME2'
     ]
 
     GridSettings = {
