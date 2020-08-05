@@ -7,9 +7,8 @@ from PyBoltz.PyBoltzRun import PBRes
 
 class OdieRun:
     '''Class to run PyBoltz and provide output for the Garfield++ package'''
-
     OdieSettings = {
-        'Gases': ['ARGON', 'CH4'],
+        'Gases': ['DME', 'CH4'],
         'Fractions': [90.0, 10.0],
         'Max_collisions': 4e7,
         'EField_Vcm': 100,
@@ -65,7 +64,6 @@ class OdieRun:
             if not key in Inputs:
                 print("{} not set, using default value: {}".format(key, self.OdieSettings[key]))
                 Inputs[key] = self.OdieSettings[key]
-
         for key in Inputs.keys():
             if not key in self.OdieSettings.keys():
                 print("{} not a valid setting. Ignoring option.".format(key))

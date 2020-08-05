@@ -19,8 +19,8 @@ class PBRes:
 class PyBoltzRun:
     '''Class used to be the wrapper object of PyBoltz.'''
     #Default settings for running PyBolz
-    PBSettings   ={'Gases'                 :['NEON','CO2'],
-                   'Fractions'             :[90,10],
+    PBSettings   ={'Gases'                 :['DME2','CO2'],
+                   'Fractions'             :[99,1],
                    'Max_collisions'        :4e7,
                    'EField_Vcm'            :100, 
                    'Max_electron_energy'   :0,

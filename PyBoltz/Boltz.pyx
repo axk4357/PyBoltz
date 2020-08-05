@@ -14,7 +14,6 @@ from PyBoltz.Townsend cimport ALPCALCT
 from PyGasMix.Gasmix cimport Gasmix
 
 
-
 cdef extern from "C/RM48.h":
     double DRAND48(double dummy)
     void RM48(double lenv)
@@ -36,7 +35,6 @@ cdef class Boltz:
     .. note::
         If the variable has a "NT" at the end, that variable has the same function as its counterpart without a "NT" at the end.
     """
-
     def __init__(self):
         '''
         Fill all the variables needed with zeros.This function uses memset as it is fast.
@@ -317,7 +315,6 @@ cdef class Boltz:
         """
         setSeed(self.Random_Seed)
         ELimNotYetFixed = 1
-
         cdef double ReducedField
         cdef int i = 0
 
