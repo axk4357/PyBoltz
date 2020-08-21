@@ -57,6 +57,7 @@ class PyBoltzRun:
 
     # Convert MagBoltz GasCode in GasName
     def GasName(self,Code):
+        print(Code)
         '''Function used to return the name of the Gas ID given.'''
         return Gases[Code]
     
@@ -99,7 +100,7 @@ class PyBoltzRun:
         MBObject.Decor_Lookbacks = Inputs['Decor_LookBacks']
         MBObject.Decor_Step = Inputs['Decor_Step']
         MBObject.Num_Samples = Inputs['NumSamples']
-
+        
         return True
 
     # Extract Outputs into Output Dictionary
@@ -122,7 +123,7 @@ class PyBoltzRun:
                        [MBObject.ErrorDiffusionXY, MBObject.ErrorDiffusionY, MBObject.ErrorDiffusionYZ],
                        [MBObject.ErrorDiffusionXZ, MBObject.ErrorDiffusionYZ, MBObject.ErrorDiffusionZ]]
         Outputs['DTensor']       = PBRes(np.array(DTensor), np.array(DTensorErr))
-
+        
         return Outputs
 
     # Run PyBoltz with chosen settings

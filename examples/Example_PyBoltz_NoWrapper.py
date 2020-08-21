@@ -47,7 +47,7 @@ Object.Enable_Penning = 0
 Object.Enable_Thermal_Motion=1
 Object.Max_Electron_Energy = 0.0
 # Set the gas's with there given number
-Object.GasIDs=[15,0,0,0,0,0]
+Object.GasIDs=[26,0,0,0,0,0]
 # Set the gas fractions
 Object.GasFractions=[100,0,0,0,0,0]
 # Set the tempature
@@ -63,8 +63,8 @@ Object.Console_Output_Flag = 1
 Object.Steady_State_Threshold = 40
 Object.Which_Angular_Model = 2
 
-
 Object.Start()
+raise KeyError(gas_DME2/XEN)
 
 t2 =time.time()
 
