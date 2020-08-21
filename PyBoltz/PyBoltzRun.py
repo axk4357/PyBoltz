@@ -57,7 +57,6 @@ class PyBoltzRun:
 
     # Convert MagBoltz GasCode in GasName
     def GasName(self,Code):
-        print(Code)
         '''Function used to return the name of the Gas ID given.'''
         return Gases[Code]
     
