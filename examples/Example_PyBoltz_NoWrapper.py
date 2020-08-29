@@ -55,7 +55,7 @@ Object.TemperatureCentigrade = float(23)
 # Set the pressure
 Object.Pressure_Torr = 750.062
 # Set the eletric field
-Object.EField = 100000
+Object.EField = 10000
 # Set the magnetic field and angle
 Object.BField_Mag =0
 Object.BField_Angle =0
@@ -64,7 +64,6 @@ Object.Steady_State_Threshold = 40
 Object.Which_Angular_Model = 2
 
 Object.Start()
-raise KeyError(gas_DME2/XEN)
 
 t2 =time.time()
 
@@ -75,7 +74,7 @@ print("************************************************ \n")
 print("run time [s]= ",round(t2-t1,3))
 
 for I in range(Object.NumberOfGases):
-    if Object.GasIDs[I]<=25:
+    if Object.GasIDs[I]<=26:
         print("Percentage of "+GASES[int(Object.GasIDs[I])]+" = "+  str(Object.GasFractions[I]))
 
 print("Tempature [C]         = ", Object.TemperatureCentigrade)
