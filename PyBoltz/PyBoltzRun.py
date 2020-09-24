@@ -19,7 +19,7 @@ class PBRes:
 class PyBoltzRun:
     '''Class used to be the wrapper object of PyBoltz.'''
     #Default settings for running PyBolz
-    PBSettings   ={'Gases'                 :['DME2','CO2'],
+    PBSettings   ={'Gases'                 :['C2F6','CO2'],
                    'Fractions'             :[99,1],
                    'Max_collisions'        :4e7,
                    'EField_Vcm'            :100, 
@@ -40,7 +40,7 @@ class PyBoltzRun:
     # Available Gases
     Gases = [np.nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE', 'PROPANE'
          , 'ISOBUTANE', 'CO2', np.nan, 'H2O', 'OXYGEN', 'NITROGEN', np.nan, np.nan, np.nan, np.nan
-         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME','DME2']
+         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME','C2F6']
     '''Array of gases in PyBoltz.'''
 
     # Print list of available gases
