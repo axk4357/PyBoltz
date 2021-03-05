@@ -10,4 +10,6 @@ python3 setup_build.py clean
 export CFLAGS="-I /usr/local/lib/python3.8/site-packages/numpy/core/include $CFLAGS"
 python3 setup_build.py build_ext --inplace
 
+print("Done!")
+
 

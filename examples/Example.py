@@ -17,16 +17,16 @@ print("================")
 PBRun.ListGases()
 
 # Configure settings for our simulation
-MySettings = {'Gases': ['C2F6', 'CO2'],
-              'Fractions': [99, 1],
-              'Max_collisions': 1e7,
-              'EField_Vcm': 100,
-              'Max_electron_energy': 0,
+MySettings = {'Gases': ['ARGON', 'C2F6'],
+              'Fractions': [80, 20],
+              'Max_collisions': 4e8,
+              'EField_Vcm': 20,
+              'Max_electron_energy': 0.0,
               'Temperature_C': 23,
-              'Pressure_Torr': 7500.062,
+              'Pressure_Torr': 750,
               'BField_Tesla': 0,
               'BField_angle': 0,
-              'Angular_dist_model': 1,
+              'Angular_dist_model': 2,
               'Enable_penning': 0,
               'Enable_thermal_motion': 1,
               'ConsoleOutputFlag': 1}
@@ -44,7 +44,7 @@ DT1s_err = []
 DL1s_err = []
 
 # Run for each E field
-EFields = np.arange(100, 300, 100)
+EFields = np.arange(20, 220, 20)
 
 print("Running with E fields of: ")
 print(EFields)

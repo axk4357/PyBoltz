@@ -26,11 +26,11 @@ N2 = 16
 H2 = 21
 DEUTERIUM = 22
 DME = 24
-DME2 = 26
+C2F6 = 29
 
 GASES = [np.nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE', 'PROPANE'
          , 'ISOBUTANE', 'CO2', np.nan, 'H2O', 'OXYGEN', 'NITROGEN', np.nan, np.nan, np.nan, np.nan
-         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME','DME2']
+         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME',np.nan, np.nan, np.nan,'C2F6']
 
 Object = Boltz()
 
@@ -38,24 +38,24 @@ import time
 t1 =time.time()
 
 # Set the number of gases
-Object.NumberOfGases =1
+Object.NumberOfGases =2
 # Set the number of collisons
 Object.MaxNumberOfCollisions =1*40000000.0
 # Set penning
 Object.Enable_Penning = 0
 # Calculate the electron energy
 Object.Enable_Thermal_Motion=1
-Object.Max_Electron_Energy = 0.0
+Object.Max_Electron_Energy = 10
 # Set the gas's with there given number
-Object.GasIDs=[26,0,0,0,0,0]
+Object.GasIDs=[2,29,0,0,0,0]
 # Set the gas fractions
-Object.GasFractions=[100,0,0,0,0,0]
+Object.GasFractions=[90,10,0,0,0,0]
 # Set the tempature
 Object.TemperatureCentigrade = float(23)
 # Set the pressure
-Object.Pressure_Torr = 750.062
+Object.Pressure_Torr = 750
 # Set the eletric field
-Object.EField = 10000
+Object.EField = 200
 # Set the magnetic field and angle
 Object.BField_Mag =0
 Object.BField_Angle =0
@@ -74,7 +74,7 @@ print("************************************************ \n")
 print("run time [s]= ",round(t2-t1,3))
 
 for I in range(Object.NumberOfGases):
-    if Object.GasIDs[I]<=26:
+    if Object.GasIDs[I]<=30:
         print("Percentage of "+GASES[int(Object.GasIDs[I])]+" = "+  str(Object.GasFractions[I]))
 
 print("Tempature [C]         = ", Object.TemperatureCentigrade)

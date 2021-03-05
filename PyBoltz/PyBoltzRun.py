@@ -19,19 +19,19 @@ class PBRes:
 class PyBoltzRun:
     '''Class used to be the wrapper object of PyBoltz.'''
     #Default settings for running PyBolz
-    PBSettings   ={'Gases'                 :['C2F6','CO2'],
-                   'Fractions'             :[99,1],
+    PBSettings   ={'Gases'                 :['ARGON','C2F6'],
+                   'Fractions'             :[90,10],
                    'Max_collisions'        :4e7,
-                   'EField_Vcm'            :100, 
+                   'EField_Vcm'            :20,
                    'Max_electron_energy'   :0,
                    'Temperature_C'         :23,
-                   'Pressure_Torr'         :750.062,
+                   'Pressure_Torr'         :750,
                    'BField_Tesla'          :0,
                    'BField_angle'          :0,
                    'Angular_dist_model'    :1,
                    'Enable_penning'        :0,
                    'Enable_thermal_motion' :1,
-                   'ConsoleOutputFlag'     :0,
+                   'ConsoleOutputFlag'     :1,
                    'Decor_Colls'           :0,
                    'Decor_LookBacks'       :0,
                    'Decor_Step'            :0,
@@ -40,7 +40,7 @@ class PyBoltzRun:
     # Available Gases
     Gases = [np.nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE', 'PROPANE'
          , 'ISOBUTANE', 'CO2', np.nan, 'H2O', 'OXYGEN', 'NITROGEN', np.nan, np.nan, np.nan, np.nan
-         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME','C2F6']
+         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME', np.nan, np.nan, np.nan, 'C2F6']
     '''Array of gases in PyBoltz.'''
 
     # Print list of available gases

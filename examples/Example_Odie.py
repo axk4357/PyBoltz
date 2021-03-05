@@ -13,7 +13,7 @@ Odie = OdieRun()
 
 # Configure settings for our simulation
 base_settings = {
-    'Gases': ['DME2', 'CH4'],
+    'Gases': ['ARGON', 'C2F6'],
     'Fractions': [90.0, 10.0],
     'Max_collisions': 4e6,
     'EField_Vcm': 100,

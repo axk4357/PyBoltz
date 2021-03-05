@@ -27,11 +27,11 @@ N2 = 16
 H2 = 21
 DEUTERIUM = 22
 DME = 24
-DME2 = 26
+C2F6 = 29
 
 GASES = [np.nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE', 'PROPANE'
          , 'ISOBUTANE', 'CO2', np.nan, 'H2O', 'OXYGEN', 'NITROGEN', np.nan, np.nan, np.nan, np.nan
-         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME','DME2']
+         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME',np.nan, np.nan, np.nan, 'C2F6']
 
 Object = Boltz()
 
