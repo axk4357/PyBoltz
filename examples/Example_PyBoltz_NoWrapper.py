@@ -10,6 +10,7 @@ import numpy as np
 # Setup gases
 
 CF4 = 1
+ARGON = 2
 He4 = 3
 He3 = 4
 Ne  = 5
@@ -26,11 +27,11 @@ N2 = 16
 H2 = 21
 DEUTERIUM = 22
 DME = 24
-C2F6 = 29
+C2F6 = 26
 
 GASES = [np.nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE', 'PROPANE'
          , 'ISOBUTANE', 'CO2', np.nan, 'H2O', 'OXYGEN', 'NITROGEN', np.nan, np.nan, np.nan, np.nan
-         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME',np.nan, np.nan, np.nan,'C2F6']
+         , 'HYDROGEN', 'DEUTERIUM', np.nan, 'DME','C2F6']
 
 Object = Boltz()
 
@@ -47,7 +48,7 @@ Object.Enable_Penning = 0
 Object.Enable_Thermal_Motion=1
 Object.Max_Electron_Energy = 10
 # Set the gas's with there given number
-Object.GasIDs=[2,29,0,0,0,0]
+Object.GasIDs=[2,25,0,0,0,0]
 # Set the gas fractions
 Object.GasFractions=[90,10,0,0,0,0]
 # Set the tempature
@@ -55,7 +56,7 @@ Object.TemperatureCentigrade = float(23)
 # Set the pressure
 Object.Pressure_Torr = 750
 # Set the eletric field
-Object.EField = 200
+Object.EField = 40
 # Set the magnetic field and angle
 Object.BField_Mag =0
 Object.BField_Angle =0
@@ -74,10 +75,10 @@ print("************************************************ \n")
 print("run time [s]= ",round(t2-t1,3))
 
 for I in range(Object.NumberOfGases):
-    if Object.GasIDs[I]<=30:
-        print("Percentage of "+GASES[int(Object.GasIDs[I])]+" = "+  str(Object.GasFractions[I]))
+    '''if Object.GasIDs[I]<=30:
+        print("Percentage of "+GASES[int(Object.GasIDs[I])]+" = "+  str(Object.GasFractions[I]))'''
 
-print("Tempature [C]         = ", Object.TemperatureCentigrade)
+print("Temperature [C]         = ", Object.TemperatureCentigrade)
 print("Pressure [torr]       = ", Object.Pressure_Torr)
 print("Eletric field [V/cm]  = ", Object.EField)
 print("----------------------------------------------------")

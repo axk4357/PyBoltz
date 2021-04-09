@@ -39,7 +39,7 @@ import time
 t1 =time.time()
 
 # Set the number of gases
-Object.NumberOfGases =1
+Object.NumberOfGases =2
 # Set the number of collisons
 Object.MaxNumberOfCollisions =40000000.0
 # Set penning
@@ -48,16 +48,16 @@ Object.Enable_Penning = 0
 Object.Enable_Thermal_Motion=1
 Object.Max_Electron_Energy = 0.0
 # Set the gas's with there given number
-Object.GasIDs=[15, 0, 0, 0, 0, 0]
+Object.GasIDs=[2, 29, 0, 0, 0, 0]
 
 # Set the gas fractions
-Object.GasFractions=[100, 0, 0, 0, 0, 0]
+Object.GasFractions=[90, 10, 0, 0, 0, 0]
 # Set the tempature
 Object.TemperatureCentigrade = float(23)
 # Set the pressure
 Object.Pressure_Torr = 750.062
 # Set the eletric field
-Object.EField =10000
+Object.EField =20
 # Set the magnetic field and angle
 Object.BField_Mag =0
 Object.BField_Angle =0

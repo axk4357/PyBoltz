@@ -18,10 +18,10 @@ PBRun.ListGases()
 
 # Configure settings for our simulation
 MySettings = {'Gases': ['ARGON', 'C2F6'],
-              'Fractions': [80, 20],
+              'Fractions': [90, 10],
               'Max_collisions': 4e8,
               'EField_Vcm': 20,
-              'Max_electron_energy': 0.0,
+              'Max_electron_energy': 10,
               'Temperature_C': 23,
               'Pressure_Torr': 750,
               'BField_Tesla': 0,

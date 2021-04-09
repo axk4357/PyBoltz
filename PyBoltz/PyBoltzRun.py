@@ -40,7 +40,7 @@ class PyBoltzRun:
     # Available Gases
     Gases = [np.nan, 'CF4', 'ARGON', 'HELIUM4', 'HELIUM3', 'NEON', 'KRYPTON', 'XENON', 'CH4', 'ETHANE', 'PROPANE'
          , 'ISOBUTANE', 'CO2', np.nan, 'H2O', 'OXYGEN', 'NITROGEN', np.nan, np.nan, np.nan, np.nan
-         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME', np.nan, np.nan, np.nan, 'C2F6']
+         , 'HYDROGEN', 'DEUTERIUM', np.nan, np.nan, 'DME','C2F6']
     '''Array of gases in PyBoltz.'''
 
     # Print list of available gases
